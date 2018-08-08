@@ -1,2 +1,2 @@
 # Hackathon
-Drag and Drop the folder labeled with your team's name here.
+Drag and Drop your team's app code/documentation under your team's folder
