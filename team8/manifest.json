@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "SOLAR Sexy",
+  "description": "Make Stony Brook University's SOLAR system less ugly.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "SOLAR Sexy"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "css": ["bootstrap.min.css"],
+      "matches": ["http://*/*"],
+      "js":["jquery-3.3.1.min.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "*://*/*"
+  ],
+  "options_ui":{
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "icons": {
+    "48": "seawolff.png"
+  }
+
+  
+}
